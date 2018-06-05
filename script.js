@@ -38,8 +38,8 @@ const battle = () => {
       console.log(grantHealth);
       console.log("WIN ROUND!!!");
       // add a popup
-      $("#full-screen-popup").html(`<p>Well fought! You have won round ${userWins}!</p><p>Begin round ${userWins + 1}?<button type="button" class="start-button">Play!</button>`)
-      .css("display", "flex")
+      $("#full-screen-popup").html(`<p>Well fought! You have won round ${userWins}!</p><p>Begin round ${userWins + 1}?</p><button type="button" class="start-button">Play!</button>`)
+      .css("display", "block")
       .css("font-size", "26px");
       userWins++
       grantHealth = 10;
@@ -72,8 +72,7 @@ const battle = () => {
       <p>The strike is fatal.</p>
       <p>As darkness consumes your vision you hear him say the last words you ever hear...</p>
       <h2>lol. sucks to suck</h2>`)
-      .css("display", "flex")
-      .css("font-size", "26px");
+      .css("display", "flex");
     }
   //// END GRANT TURN
   // } // end of if wins < 3
@@ -92,7 +91,7 @@ let items = [
     "name": "Potion",
     "effect": userHealth += 5,
     "quantity": 1
-  }
+  },
 
   {
     "id": 2,
