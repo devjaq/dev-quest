@@ -66,13 +66,13 @@ const battle = () => {
 
     if (userHealth <= 0) {
       userHealth = 0;
-      console.log(userHealth);
-      console.log("sucks to suck");
-      $("#full-screen-popup").html(`<p>Your fear gets the best of you and you turn to flee. Grant sees you turn your back and takes the opportunity to strike!</p>
-      <p>The strike is fatal.</p>
-      <p>As darkness consumes your vision you hear him say the last words you ever hear...</p>
-      <h2>lol. sucks to suck</h2>`)
-      .css("display", "flex");
+      // console.log(userHealth);
+      // console.log("sucks to suck");
+      // $("#full-screen-popup").html(`<p>Your fear gets the best of you and you turn to flee. Grant sees you turn your back and takes the opportunity to strike!</p>
+      // <p>The strike is fatal.</p>
+      // <p>As darkness consumes your vision you hear him say the last words you ever hear...</p>
+      // <h2>lol. sucks to suck</h2>`)
+      // .css("display", "block");
     }
   //// END GRANT TURN
   // } // end of if wins < 3
@@ -140,10 +140,10 @@ $("#item").on("click", () => {
 $("#flee").on("click", () => {
   console.log("FLEE");
   $("#full-screen-popup").html(`<p>Your fear gets the best of you and you turn to flee. Grant sees you turn your back and takes the opportunity to strike!</p>
-  <p>The strike is fatal.</p>
+  <h2>The strike is fatal.</h2>
   <p>As darkness consumes your vision you hear him say the last words you ever hear...</p>
   <h2>lol. sucks to suck</h2>`)
-  .css("display", "flex")
+  .css("display", "block")
   .css("font-size", "18px");
 });
 
